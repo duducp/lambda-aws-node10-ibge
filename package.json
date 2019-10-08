@@ -10,6 +10,6 @@
   "scripts": {
     "deploy": "serverless deploy -v"
   },
-  "author": "",
+  "author": "Carlos Eduardo",
   "license": "ISC"
 }
