@@ -3,9 +3,22 @@ service: serverless
 provider:
   name: aws
   runtime: nodejs10.x
-  stage: dev
-  region: us-east-1
+  stage: beta
+  region: sa-east-1
+  memorySize: 128
 
 functions:
-  hello:
-    handler: handler.hello
+  estados:
+    handler: estados.getEstados
+    events:
+      - http:
+          path: estados
+          method: get
+          cors: true
+  cidades:
+    handler: cidades.getCidades
+    events:
+      - http:
+          path: cidades/{sigla}
+          method: get
+          cors: true
