@@ -1,4 +1,4 @@
-# IBGE - Function Serverless AWS - Node.Js 10
+# IBGE - Lambda Serverless AWS - Node.Js 10
 
 Essa lambda é responsável por buscar estados e cidades direto no site do IBGE.
 
